@@ -1,0 +1,53 @@
+.mainbar{
+  height: 100vh;
+  padding-left: 1rem;
+}
+.mainbar p{
+  color: black;
+}
+
+.conservation-main{
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+}
+.conservative{
+  border: 1px solid lightblue;
+  padding: 1.5rem;
+
+  cursor: pointer;
+}
+.conservative:hover{
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.123);
+}
+.conservative p{
+  letter-spacing: 1px;
+  padding-top: 0.5rem;
+}
+
+.port{
+  background-image: linear-gradient(rgba(255, 0, 0, 0.265),rgba(0, 0, 255, 0.421));
+}
+
+
+
+.balance{
+  background-image: linear-gradient(rgba(0, 255, 255, 0.49),rgb(185, 184, 184));
+}
+
+.growth:hover{
+  background-image: linear-gradient(gray,rgba(143, 67, 214, 0.478));
+}
+
+@media screen and (max-width:600px) {
+  .conservation-main{
+    flex-direction: column;
+    position: relative;
+    top: 4rem;
+  }
+  h2{
+position: relative;
+top: 4rem;
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payments</title>
+  <link rel="stylesheet" href="style/dashboard.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/invest.css">
+  <link rel="stylesheet" href="style/payment.css">
+</head>
+<body>
+  <div class="heading">
+    <div class="hamburger" id="hamburger">
+      <span class="bar1 barr"></span>
+      <span class="bar1 bar2"></span>
+      <span class="bar1 bar3"></span>
+    </div>
+    <h1 class="close tax">Otaxy<span class="vest">Vest</span></h1>
+    <h3>NAIRA MUTUAL FUNDS</h3>
+    <div class="complete-pro ">
+      <p class="close">40% Complete</p>
+      <div class="circle-pic"></div>
+    </div>
+  </div>
+  <section class="main">
+    <div class="sidebar">
+      <h2><span class="hi">Hi</span> <%= firstName %></h2>
+      <div class="home hoome" id="home">
+        <img src="" alt="">
+        <p><a href="home-dashboard.ejs">Home</a></p>
+      </div>
+      <div class="home" id="save">
+        <img src="" alt="">
+        <p><a href="save.ejs">Save</a></p>
+      </div>
+      <div class="home" id="invest">
+        <img src="" alt="">
+        <p><a href="invest.ejs">Invest</a></p>
+      </div>
+      <div class="home" id="payment">
+        <img src="" alt="">
+        <p><a href="payment.ejs">Payment</a></p>
+      </div>
+      <div class="home" id="referral">
+        <img src="" alt="">
+        <p><a href="">Referral</a></p>
+      </div>
+    </div>
+    <div class="dropmenu" id="dropmenu">
+      <div class="menu">
+        <div class="dmenu">
+          <h2><span class="hi">Hi</span> <%= firstName %></h2>
+          <img src="" alt="">
+        </div>
+ 
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="home-dashboard.ejs">Home</a></p>
+        </div>
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="save.ejs">Save</a></p>
+        </div>
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="invest.ejs">Invest</a></p>
+        </div>
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="payment.ejs">Payment</a></p>
+        </div>
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="">Referral</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="  bank-details">
+      <div class="accont-talk">
+        <h6 class="ball">Add bank <br> Account</h6>
+        <h6 class="move">Move money to/from your  OtaxyVest savings and  Investment with your bank details. Now you can widthdraw seamlessly after updating your bank account details as widthrawal process will be quicker and faster.</h6>
+      </div>
+
+      <div class="">
+        <div class="" id="manage">
+          <form action="/addbank" method="post">
+            <div class="form-element">
+            <input type="text" placeholder="Recipient Account Number" class="input" autofocus maxlength="10" name="acc_num">
+            <select name="user_acc" id="" class="input" name="bank">
+              <option value="" aria-disabled="true">Select Bank</option>
+              <option value="">Eco Bank</option>
+              <option value="">First Bank</option>
+              <option value="">Fidelity Bank</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <button type="submit" class="btnadd">Add bank</button>
+            </div>
+
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  <script src="./index.js"></script>
+</body>
+</esave.ejs>

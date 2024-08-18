@@ -1,0 +1,74 @@
+.mainbar{
+ height: 100vh;
+}
+
+.mainbar h3{
+  padding-top: 4rem;
+}
+.mainbar ul{
+  display: flex;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+.input{
+  margin-left: 0;
+  border: 1px solid black;
+  width: 17rem;
+ height: 2.3rem;
+ font-size: 1.5em;
+ padding: 1rem;
+}
+
+.mainbar li{
+  padding: 0.5rem 0.7rem;
+  list-style-type: none;
+  background-color: rgba(175, 175, 175, 0.285);
+  border-radius: 1rem;
+  color: darkblue;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.money-input li:hover{
+  box-shadow: 2px 3px 5px rgba(175, 175, 175, 0.285);
+}
+
+.money-input{
+padding-top: 3.5rem;
+padding: 1rem;
+}
+.btn{
+  background-color: rgba(0, 0, 255, 0.211);
+  padding: 0.5rem 3.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: rgb(0, 0, 0);
+  margin-top: 3rem;
+}
+
+
+
+
+@media screen and (max-width:900px) {
+  .put-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .invest-phone{
+  width: 100%;
+  margin-top: 3.5rem;
+  padding-bottom: 2rem;
+ }
+}
+
+@media screen and (max-width:600px) {
+  .mainbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goals</title>
+    <link rel="stylesheet" href="style/dashboard.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/invest.css" />
+    <link rel="stylesheet" href="style/home-dash.css" />
+    <link rel="stylesheet" href="style/save.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <div class="hamburger" id="hamburger">
+        <span class="bar1 barr"></span>
+        <span class="bar1 bar2"></span>
+        <span class="bar1 bar3"></span>
+      </div>
+      <h1 class="close tax">Otaxy<span class="vest">Vest</span></h1>
+      <h3>NAIRA MUTUAL FUNDS</h3>
+      <div class="complete-pro">
+        <p class="close">40% Complete</p>
+        <div class="circle-pic"></div>
+      </div>
+    </div>
+    <section class="main">
+      <div class="sidebar">
+        <h2><span class="hi">Hi</span> <%= firstName %></h2>
+        <div class="home hoome" id="home">
+          <img src="" alt="" />
+          <p><a href="home-dashboard.ejs">Home</a></p>
+        </div>
+        <div class="home" id="save">
+          <img src="" alt="" />
+          <p><a href="save.ejs">Save</a></p>
+        </div>
+        <div class="home" id="invest">
+          <img src="" alt="" />
+          <p><a href="invest.ejs">Invest</a></p>
+        </div>
+        <div class="home" id="payment">
+          <img src="" alt="" />
+          <p><a href="payment.ejs">Payment</a></p>
+        </div>
+        <div class="home" id="referral">
+          <img src="" alt="" />
+          <p><a href="">Referral</a></p>
+        </div>
+      </div>
+      <div class="dropmenu" id="dropmenu">
+        <div class="menu">
+          <div class="dmenu">
+            <h2><span class="hi">Hi</span> <%= firstName %></h2>
+            <img src="" alt="" />
+          </div>
+
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="home-dashboard.ejs">Home</a></p>
+          </div>
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="save.ejs">Save</a></p>
+          </div>
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="invest.ejs">Invest</a></p>
+          </div>
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="payment.ejs">Payment</a></p>
+          </div>
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="">Referral</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="mainbar">
+        <h6 class="plan">Create a new savings plan</h6>
+        <div class="first-plans">
+          <a href="portfolio.ejs">
+            <div class="emmergency saving-plan">
+              <img src="images/pace-plan.svg" alt="" />
+              <div class="word">
+                <h6>Emergency Savings</h6>
+                <p>
+                  Save for emergencies and easily acess your funds when the needs
+                  arises.
+                </p>
+              </div>
+             
+            </div>
+          </a>
+          
+          <a href="portfolio.ejs">
+            <div class="money-duo saving-plan">
+              <img src="images/flex-plan.svg" alt="" />
+              <div class="word">
+                <h6>Money Duo</h6>
+                <p>Create a savings plan together with your friends and partner.</p>
+              </div>
+  
+            </div>
+          </a>
+          
+          <a href="portfolio.ejs">  
+             <div class="saving-circle saving-plan">
+                <img src="images/vault-plan.svg" alt="" />
+                <div class="word">
+                  <h6>Savings Circles</h6>
+                  <p>
+                    Challenge yourself by saving with people who have the same goals
+                    as you.
+                  </p>
+                </div>
+           </div>
+         </a>
+       
+        </div>
+
+        <h6 class="plan">Connect Triggers</h6>
+        <a href="portfolio.ejs">
+          <div class="trigger-connect saving-plan">
+            <img src="images/easy.svg" alt="" width="60" />
+            <h6>Triggers</h6>
+            <p>
+              Supercharge your wealth building white doing your favourite things.
+            </p>
+          </div>
+        </a>
+    
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

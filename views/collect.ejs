@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="3600">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style/dashboard.css" />
+
+    <link rel="stylesheet" href="style/invest.css" />
+    <link rel="stylesheet" href="style/home-dash.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/money-page.css" />
+    <link rel="stylesheet" href="style/collect.css">
+  </head>
+  <body>
+    <div class="heading">
+      <div class="hamburger" id="hamburger">
+        <span class="bar1 barr"></span>
+        <span class="bar1 bar2"></span>
+        <span class="bar1 bar3"></span>
+      </div>
+      <h1 class="close tax otaxy">Otaxy<span class="vest">Vest</span></h1>
+      <h3>NAIRA MUTUAL FUNDS</h3>
+      <div class="complete-pro">
+        <p class="close otaxy">40% Complete</p>
+        <div class="circle-pic"></div>
+      </div>
+    </div>
+    <section class="main">
+      <div class="sidebar">
+        <h2><span class="hi">Hi</span> <%= firstName %></h2>
+        <div class="home hoome" id="home">
+          <img src="" alt="" />
+          <p><a href="home-dashboard.ejs">Home</a></p>
+        </div>
+        <div class="home" id="save">
+          <img src="" alt="" />
+          <p><a href="save.ejs">Save</a></p>
+        </div>
+        <div class="home" id="invest">
+          <img src="" alt="" />
+          <p><a href="invest.ejs">Invest</a></p>
+        </div>
+        <div class="home" id="payment">
+          <img src="" alt="" />
+          <p><a href="payment.ejs">Payment</a></p>
+        </div>
+        <div class="home" id="referral">
+          <img src="" alt="" />
+          <p><a href="">Referral</a></p>
+        </div>
+      </div>
+      <div class="dropmenu" id="dropmenu">
+        <div class="menu">
+          <div class="dmenu">
+            <h2><span class="hi">Hi</span> <%= firstName %></h2>
+            <img src="" alt="" />
+          </div>
+
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="home-dashboard.ejs">Home</a></p>
+          </div>
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="save.ejs">Save</a></p>
+          </div>
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="invest.ejs">Invest</a></p>
+          </div>
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="payment.ejs">Payment</a></p>
+          </div>
+          <div class="dmenu">
+            <img src="" alt="" />
+            <p><a href="">Referral</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="mainbar">
+        <div class="payment-portal">
+          <div class="portal">
+            <form action="/dashboard" method="get">
+            <p>Account number expires in </p>
+            <p class="time" id="countdown">59:43</p>
+            <ul>
+              <li>Amount</li>
+              <li><span>&#x20A6</span> <%= amountIn %></li>
+            </ul>
+            <ul>
+              <li>Bank</li>
+              <li>Wema Bank</li>
+            </ul>
+            <ul>
+              <li>Account Number</li>
+              <li>0271927587</li>
+            </ul>
+            <p>Transfer only <span>&#x20A6</span><%= amountIn %> within the given timeframe.</p>
+            <button class="btn1">I HAVE PAID</button>
+          </form>
+          </div>
+       
+        </div>
+
+
+
+
+      </div>
+    </section>
+    <script src="money.js">
+    </script>
+    <script src="index.js">
+    </script>
+    <script>
+      const duration = 60 * 60
+      const timerEl = document.getElementById('countdown')
+      setInterval(()=>{
+      const remainingTime = duration -  Math.floor(Date.now()/1000)
+        const hours = Math.floor(remainingTime/3600)
+        const minutes = Math.floor((remainingTime % 3600)/60)
+        const seconds = remainingTime % 60
+
+      },1000)
+    </script>
+  </body>
+</html>

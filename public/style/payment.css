@@ -1,0 +1,82 @@
+.money p{
+  font-size: 1em;
+}
+.manage{
+  background-color: rgb(255, 255, 255);
+  margin-top: 0;
+  padding: 0;
+}
+.input{
+  display: block;
+  width: 18rem;
+  height: 2.8rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 0.4rem;
+  font-size: 1.15em;
+  border: 2px solid rgb(74, 177, 211);
+  text-align: left;
+}
+
+.btnadd{
+ padding: 1rem 3rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  text-align: right;
+}
+
+
+
+.bank-details{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 4.7rem;
+  background-color: white;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 1rem;
+ min-height: 90vh; 
+}
+h6{
+  font-size: 1.1em;
+}
+.ball{
+text-align: left;
+color: blueviolet;
+
+
+}
+.move{
+  width: 20rem;
+  letter-spacing: 1.1px;
+  line-height: 2rem;
+  max-width: 30rem 20rem;
+}
+
+@media screen and (max-width: 900px) {
+  .bank-details{
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .input{
+    width: 100%;
+  }
+  h6{
+    font-size: 1.4em;
+  }
+
+}
+
+@media screen and (min-width: 901px) {
+  .bank-details{
+    top: 1rem;
+  }
+  .ball{
+      line-height: 3.5rem;
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style/dashboard.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/invest.css">
+  <link rel="stylesheet" href="style/home-dash.css">
+  <link rel="stylesheet" href="style/potfolio.css">
+</head>
+<body>
+  <div class="heading">
+    <div class="hamburger" id="hamburger">
+      <span class="bar1 barr"></span>
+      <span class="bar1 bar2"></span>
+      <span class="bar1 bar3"></span>
+    </div>
+    <h1 class="close tax otaxy">Otaxy<span class="vest">Vest</span></h1>
+    <h3>NAIRA MUTUAL FUNDS</h3>
+    <div class="complete-pro ">
+      <p class="close otaxy">40% Complete</p>
+      <div class="circle-pic"></div>
+    </div>
+  </div>
+  <section class="main">
+    <div class="sidebar">
+       <h2><span class="hi">Hi</span> <%= firstName %></h2>
+      <div class="home hoome" id="home">
+        <img src="" alt="">
+        <p><a href="home-dashboard.ejs">Home</a></p>
+      </div>
+      <div class="home" id="save">
+        <img src="" alt="">
+        <p><a href="save.ejs">Save</a></p>
+      </div>
+      <div class="home" id="invest">
+        <img src="" alt="">
+        <p><a href="invest.ejs">Invest</a></p>
+      </div>
+      <div class="home" id="payment">
+        <img src="" alt="">
+        <p><a href="payment.ejs">Payment</a></p>
+      </div>
+      <div class="home" id="referral">
+        <img src="" alt="">
+        <p><a href="">Referral</a></p>
+      </div>
+    </div>
+    <div class="dropmenu" id="dropmenu">
+      <div class="menu">
+        <div class="dmenu">
+          <h2><span class="hi">Hi</span> <%= firstName %></h2>
+          <img src="" alt="">
+        </div>
+ 
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="home-dashboard.ejs">Home</a></p>
+        </div>
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="save.ejs">Save</a></p>
+        </div>
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="invest.ejs">Invest</a></p>
+        </div>
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="payment.ejs">Payment</a></p>
+        </div>
+        <div class="dmenu">
+          <img src="" alt="">
+          <p><a href="">Referral</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="mainbar ">
+      <h2>Choose a Porfolio</h2>
+      <div class="conservation-main">
+        <a href="money-page.ejs">
+          <div class="conservative port">
+            <h6>Conservative <br> Porfolio</h6>
+            <p>I want to preserve my capital while earning returns.</p>
+          </div>
+        </a>
+        <a href="money-page.ejs">
+          <div class="conservative balance">
+            <h6>Balanced <br> Porfolio</h6>
+            <p>I am okay with some risk for potentially greater returns.</p>
+          </div>
+        </a>
+      <a href="money-page.ejs">
+        <div class="conservative growth">
+          <h6>Growth <br> Porfolio</h6>
+          <p>I have a high risk tolerance and want potentially higher returns.</p>
+        </div>
+      </a>
+       
+      </div>
+   
+    </div>
+
+  </section>
+  <script src="./index.js"></script>
+</body>
+</html>

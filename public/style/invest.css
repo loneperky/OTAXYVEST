@@ -1,0 +1,117 @@
+
+
+.control-money{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-up{
+  margin-left: 4rem;
+  padding: 0.7rem 1.5rem;
+  background-color: blue;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+}
+.plan-in{
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.3em;
+}
+.money p{
+  font-size: 2.3em;
+}
+.mainbar h3{
+  text-align: center;
+}
+
+.ball{
+  text-align: center;
+  color: rgba(0, 0, 0);
+  font-size: 2em;
+}
+
+.path{
+  justify-content: space-around;
+  position: relative;
+}
+
+h6{
+  font-size: 1.5em
+}
+
+.input{
+  height: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  border: 2px solid black;
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .control-money{
+    flex-direction: column;
+  }
+  .top-up{
+    width: 80vw;
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.3em;
+  }
+  .mainrod{
+  height: 100vh;
+  display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .control-money{
+    flex-direction: column;
+  }
+
+  .mainbar h3{
+    text-align: left;
+  }
+  .ball{
+    text-align: center;
+    color: rgb(0, 64, 255);
+    font-size: 2em;
+  }
+
+  .top-up{
+    width: 80vw;
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+
+}
+button a{
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  display: block;
+}
+
+@media screen and (min-width: 901px) {
+  .mainrod{
+    padding-right: 50%;
+    align-items: center;
+    height: 85vh;
+  }
+  .merger{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  .merger:hover{
+    background-color: rgba(0, 149, 255, 0.772);
+    color: white;
+    border: none;
+  }
+}
